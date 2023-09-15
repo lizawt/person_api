@@ -9,7 +9,7 @@ The base URL for all API endpoints is /api/v1.
 
 ### Endpoints
 #### 1. Create a Person
-##### Endpoint: /api/v1/person/
+##### Endpoint:https://hngxstg2-qvjg.onrender.com/api/v1/person/
 ##### Method: POST
 
 ##### Request Body (JSON):
@@ -31,7 +31,7 @@ The base URL for all API endpoints is /api/v1.
 ```
 
 #### 2. Retrieve a Person by ID
-##### Endpoint: /api/v1/person/{id}/
+##### Endpoint:https://hngxstg2-qvjg.onrender.com/api/v1/person/{id}/
 ##### Method: GET
 
 ##### Response (HTTP Status 200 OK):
@@ -44,7 +44,7 @@ The base URL for all API endpoints is /api/v1.
 ```
 
 #### 3. Update a Person by ID
-##### Endpoint: /api/v1/person/{id}/
+##### Endpoint:https://hngxstg2-qvjg.onrender.com/api/v1/person/{id}/
 ##### Method: PUT
 
 ##### Response (HTTP Status 200 OK):
@@ -56,7 +56,7 @@ The base URL for all API endpoints is /api/v1.
 ```
 
 #### 4. Delete a Person by ID
-##### Endpoint: /api/v1/person/{id}/
+##### Endpoint:https://hngxstg2-qvjg.onrender.com/api/v1/person/{id}/
 ##### Method: DELETE
 
 ##### Response (HTTP Status 204 No Content):
