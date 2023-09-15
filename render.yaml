@@ -14,12 +14,14 @@ services:
       - key: WEB_CONCURRENCY
         value: 4
       - key: DB_HOST
-        value: dpg-cjmfcb7jbvhs73dm1sq0-a
+        value: dpg-ck2cbe7hdsdc73a4vek0-a
       - key: DB_NAME
         value: persondb
       - key: DB_USERNAME
         value: personuser
       - key: DB_PASS
-        value: 0YokkkIEl1b5hlALFmheIrSYAexoHmYG
+        value: Qv5JTBnNSwPduaUQKr3LRmqSBda7p0PB
       - key: DB_ENGINE
         value: postgresql
+
+
