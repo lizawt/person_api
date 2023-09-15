@@ -65,9 +65,13 @@ The base URL for all API endpoints is /api/v1.
 ```
 
 ### Limitations and Assumptions
+It was assumed that all APIs should have some level of authentication.
+
 The API assumes that the "name" field is unique, and there can be no two persons with the same name.
 
 Validation is applied to ensure that the "name" field only accepts string values.
+
+
 
 
 ### Deployment
