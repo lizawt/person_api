@@ -5,14 +5,14 @@ from django.contrib import admin
 from django.views.generic.base import RedirectView
 from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken import views
-from src.users.views import UserViewSet, UserCreateViewSet, PersonViewSet
+from src.users.views import UserViewSet, UserCreateViewSet, PersonViewSet, HealthCheckViewSet
 
 
 router = DefaultRouter()
 router.register("users", UserViewSet)
 router.register("user-create", UserCreateViewSet)
 router.register("person", PersonViewSet)
-
+router.register(r'health', HealthCheckViewSet, basename='health')
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -23,3 +23,4 @@ urlpatterns = [
     # http://www.django-rest-framework.org/api-guide/routers/#defaultrouter
     re_path(r"^$", RedirectView.as_view(url=reverse_lazy("api-root"), permanent=False)),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
