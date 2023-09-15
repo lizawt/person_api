@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: PersonAPI
+    plan: free
+    env: python
+    region: frankfurt  # region should be same as your database region.
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn src.config.wsgi:application"
+    envVars:
+      - key: DEBUG
+        value: False
+      - key: SECRET_KEY
+        generateValue: true
+      - key: WEB_CONCURRENCY
+        value: 4
+      - key: DB_HOST
+        value: dpg-cjmfcb7jbvhs73dm1sq0-a
+      - key: DB_NAME
+        value: persondb
+      - key: DB_USERNAME
+        value: personuser
+      - key: DB_PASS
+        value: 0YokkkIEl1b5hlALFmheIrSYAexoHmYG
+      - key: DB_ENGINE
+        value: postgresql
